@@ -50,7 +50,7 @@ function! startify#fortune#cowsay(...) abort
     let quote = startify#fortune#quote()
   endif
   let boxed_quote = startify#fortune#boxed(quote)
-  return boxed_quote + s:cow
+  return boxed_quote + s:horse
 endfunction
 
 " Function: #predefined_quotes {{{1
@@ -66,6 +66,19 @@ let s:cow = [
       \ '            (__)\       )\/\',
       \ '                ||----w |',
       \ '                ||     ||',
+      \ ]
+      
+let s:horse = [
+      \ "       o",
+      \ "        o  ~,  O",
+      \ "         o /)\~_/\",
+      \ "          '  \ \~_\__ ~",
+      \ "            _|_)_\_( )~~~",
+      \ "          //   /|   \|\",
+      \ "            ()//|     \`",
+      \ "            ||/||",
+      \ "            ||",
+      \ "            ||",
       \ ]
 
 let s:unicode = &encoding == 'utf-8' && get(g:, 'startify_fortune_use_unicode')
