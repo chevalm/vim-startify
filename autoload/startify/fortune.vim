@@ -81,6 +81,16 @@ let s:horse = [
       \ "            ||",
       \ ]
 
+let s:duck = [
+      \ "       o",
+      \ "        o",
+      \ "         o   __",
+      \ "           <(o )___",
+      \ "            ( ._> /",
+      \ "             `---'",
+      \ ]
+
+
 let s:unicode = &encoding == 'utf-8' && get(g:, 'startify_fortune_use_unicode')
 
 let s:char_top_bottom   = ['-', '─'][s:unicode]
